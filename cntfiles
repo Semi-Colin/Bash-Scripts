@@ -1,0 +1,8 @@
+#!/bin/bash
+#This program tells you how many files exist on your entire computer that contain some string in its name. Usage: cntfiles [INPUT] 
+
+INPUT=$1
+OUTPUT=`locate $INPUT | wc -l`
+
+echo "There are $OUTPUT files containing $INPUT in their name."
+
